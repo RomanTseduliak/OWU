@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bigBox{
+  
+  height: 100vh;
+  background-color: orange;
+  z-index: 1;
+  display: block;
+  content: '';
+  
+}
+.box4 {
+  width: 25%;
+  height: 350px;
+  background: black;
+  display: block;
+  float: left;
+  margin-top: 15%;
+}
+.box3 {
+  width: 25%;
+  height: 350px;
+  background: blue;
+  display: block;
+  float: left;
+  margin-top: 15%;
+}
+.box2 {
+  width: 25%;
+  height: 350px;
+  background: green;
+  display: block;
+  float: left;
+  margin-top: 15%;
+}
+.box1 {
+  width: 25%;
+  height: 350px;
+  background: red;
+  display: block;
+  float: left;
+  margin-top: 15%;
+}
