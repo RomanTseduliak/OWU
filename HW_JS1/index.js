@@ -125,9 +125,13 @@
 
 // 1.Определите переменные str, num, flag и txt со значениями «Привет», 123, true, «true».
 // let str = "Привет"
+// console.log(typeof(str));
 // let num = 123
+// console.log(typeof(num));
 // let flag = true
+// console.log(typeof(flag));
 // let txt = "true"
+// console.log(typeof(txt));
 //   При помощи оператора typeof убедитесь, что значения переменных принадлежат типам: string, number и  boolean.
 // let str = "Привет"
 // let num = 123
@@ -138,29 +142,41 @@
 
 //   2. Создайте переменные a1, a2, a3, a4, a5. При помощи математических операторов (сложение, вычитание и т.д.) найдите значения выражений:
 //     let a1 = 5 + 3,
+// console.log(a1);
 //     let a2 = 5 - 3,
+// console.log(a2);
 //     let a3 = 5 * 3,
+// console.log(a3);
 //     let a4 = 5 / 3,
+// console.log(a4);
 //     let a5 = 5 % 3
+// console.log(a5);
 //     поместив результат каждого выражения в соответствующую переменную. Например, let a1 = 5 + 3.
 
 // 3.  Создайте переменные a6, a7, a8, a9, a10. Поместите в них результат выражений:
 //    let a6 =  5 % 3,
+// console.log(a6);
 //    let a7 =  3 % 5,
+// console.log(a7);
 //    let a8 =  5 + '3',
+// console.log(a8);
 //    let a9 =  '5 - 3,
+// console.log(a9);
 //    let a10 =  75 + 'кг'
+// console.log(a10);
 
 // 4. Напишите код, который находит площадь прямоугольника высота 23см. ( переменная height),
 //   шириной 10см (переменная width), значение площади должно хранится в числовой переменной s.
 // let wight = +prompt('wight')
 // let height = +prompt('height')
 // let s = wight * height
+// console.log(s);
 // 5.  Напиши код, который находит объем цилиндра высотой 10м (переменная heightC) и диаметром основания 4м (dC),
 // результат поместите в переменную v.
 // let dC = +prompt('dC')
 // let heightC = +prompt('height')
 // let v = dC /2 * height
+// console.log('Радіус циліндра:'+ v);
 // 6. У прямоугольного треугольника две стороны n (со значением 3) и m (со значением 4).
 //   Найдите гипотенузу k по теореме Пифагора (нужно использовать функцию Math.pow(число, степень) или оператор возведения в степень ** ).
 // let n = 3
@@ -182,14 +198,16 @@
 // alert (person)
 // 9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
 //   Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
-// let str1 = 'кто'
-// let str2 = 'ти'
-// let str3 = 'такий'
 
 //   Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
 // let concatenation = str1 + ''+ str2 +'' +str3
 //   Вывести в документ содержимое переменной concatenation спомощью document.write
 //  document.write(concatenation)
+// let str1 = 'кто'
+// let str2 = 'ти'
+// let str3 = 'такий'
+// let concatenation = str1 + ' ' + str2 + ' ' + str3;
+// document.write(concatenation);
 //  10. Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
 //     let str = "20";
 //      let a = 5;
