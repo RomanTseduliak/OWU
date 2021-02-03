@@ -4,7 +4,7 @@ import { Post } from '../../interfaces';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.css'],
+  styleUrls: [],
 })
 export class PostComponent implements OnInit {
   @Input()
