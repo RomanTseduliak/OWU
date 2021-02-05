@@ -1,0 +1,6 @@
+<form [formGroup]="form">
+  <div><label>name:<input type="text" formControlName="name"></label></div>
+  <div><label>age:<input type="number" formControlName="age"></label></div>
+  <div *ngIf="form.controls.age.hasError('ageError') && form.controls.age.value">age must be gt 15</div>
+  <button (click)="send(form)" [disabled]="form.invalid">Send</button>
+</form>
