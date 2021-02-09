@@ -1,0 +1,13 @@
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: max-content;
+  margin: 20px;
+}
+div {
+  margin: 10px;
+}
+div :last-child {
+  margin-top: 10px;
+}

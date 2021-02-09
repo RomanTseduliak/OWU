@@ -1,0 +1,9 @@
+<form [formGroup]="myForm">
+  <div>
+    <label>Alcohol name: <input type="text" formControlName="name"></label>
+    <br>
+    <label>How many bottles:<input type="number" formControlName="age"></label>
+  </div>
+  <div *ngIf="myForm.controls.age.hasError('ageError') && myForm.controls.age.value">you must take for everyone</div>
+  <button (click)="send(myForm)" [disabled]="myForm.invalid">Get alcohol</button>
+</form>
