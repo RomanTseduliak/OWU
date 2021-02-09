@@ -3,16 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hw3": {
+    "dfrAngularFE": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        },
-        "@schematics/angular:application": {
-          "strict": true
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -20,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hw3",
+            "outputPath": "dist/dfrAngularFE",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +24,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -53,13 +46,13 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
                 }
               ]
             }
@@ -68,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hw3:build"
+            "browserTarget": "dfrAngularFE:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hw3:build:production"
+              "browserTarget": "dfrAngularFE:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hw3:build"
+            "browserTarget": "dfrAngularFE:build"
           }
         },
         "test": {
@@ -94,7 +87,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -116,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hw3:serve"
+            "devServerTarget": "dfrAngularFE:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hw3:serve:production"
+              "devServerTarget": "dfrAngularFE:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "hw3"
+  "defaultProject": "dfrAngularFE"
 }

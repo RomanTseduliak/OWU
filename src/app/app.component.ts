@@ -1,27 +1,9 @@
-import { Component, OnInit } from "@angular/core";
-import { AbstractControl, FormControl, FormGroup } from "@angular/forms";
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
-  templateUrl: "./app.component.html",
-  styleUrls: ["./app.component.scss"],
+  selector: 'app-root',
+  template: '<router-outlet></router-outlet>',
 })
-export class AppComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
-  myForm = new FormGroup({
-    name: new FormControl(""),
-    age: new FormControl("", [this.ageValidator]),
-  });
-  ageValidator(control: AbstractControl): { ageError: boolean } | null {
-    if (control.value < 5) {
-      return { ageError: true };
-    }
-    return null;
-  }
-
-  send(myForm: FormGroup): void {
-    console.log(myForm.value);
-  }
+export class AppComponent {
+  title = 'dfrAngularFE';
 }
